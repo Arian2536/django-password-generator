@@ -18,7 +18,7 @@ def password(request):
         characters.extend(list('0123456789'))
 
     if request.GET.get('special'):
-        characters.extend(list('!@&#$*+()'))
+        characters.extend(list('!@&#$*+()<>'))
 
     #default passwort situation
     length = int(request.GET.get('lenght',12))
